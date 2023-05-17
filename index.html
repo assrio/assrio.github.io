@@ -1,15 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> </title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <div class="center-container">
-    <form>
-      <input type="password" id="pin" name="pin" autocomplete="off" onkeyup="checkPin()" required>
-    </form>
-  </div>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Pavlov VR Hosting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      /* Global Styles */
+      body {
+        background-color: #101423;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      /* Header Styles */
+      .header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+      }
+      .logo {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-right: auto;
+      }
+      .buttons {
+        display: flex;
+      }
+      .button {
+        background-color: #00ADB5;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-left: 10px;
+        text-decoration: none;
+      }
+      .button:hover {
+        background-color: #00858A;
+      }
+      
+      /* Content Styles */
+      .content {
+        padding: 80px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 1s ease-in-out;
+      }
+      h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      p {
+        font-size: 1.8rem;
+        text-align: left;
+        margin-bottom: 40px;
+        line-height: 1.6;
+      }
+      .guarantee {
+        font-size: 1.8rem;
+        text-align: left;
+        margin-top: 20px;
+      }
+      
+      /* Additional Visual Enhancements */
+      .logo {
+        color: #00ADB5;
+      }
+      
+      h1, p {
+        color: #fff;
+      }
+      
+      /* Responsive Styles */
+      @media screen and (max-width: 768px) {
+        .content {
+          padding: 40px;
+        }
+        h1 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      
+      /* Animation */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Pavlov Hosting</div>
+      <nav class="buttons">
+        <a class="button" href="#">Home</a>
+        <a class="button" href="#">Pricing</a>
+        <a class="button" href="#">About Us</a>
+        <a class="button" href="#">Contact</a>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Performance Unleashed Stress Free</h1>
+      <p>We provide high-quality game server hosting for Pavlov VR players. Our servers are optimized for performance and reliability, and our customer support team is available 24/7 to assist you.</p>
+      <p class="guarantee">Guaranteed, or your money back.</p>
+    </div>
+  </body>
 </html>
