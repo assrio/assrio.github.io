@@ -12,7 +12,9 @@
         color: #fff;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       a {
         color: #fff;
@@ -22,14 +24,16 @@
       /* Header Styles */
       .header {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         padding: 20px;
+        width: 100%;
+        max-width: 800px;
+        box-sizing: border-box;
       }
       .logo {
         font-size: 2rem;
         font-weight: 700;
-        margin-right: auto;
       }
       .buttons {
         display: flex;
@@ -49,27 +53,30 @@
       /* Content Styles */
       .content {
         padding: 80px;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         animation: fadeIn 1s ease-in-out;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        box-sizing: border-box;
       }
       h1 {
         font-size: 3.5rem;
         margin-bottom: 20px;
-        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       p {
         font-size: 1.8rem;
-        text-align: left;
         margin-bottom: 40px;
         line-height: 1.6;
       }
       .guarantee {
         font-size: 1.8rem;
-        text-align: left;
         margin-top: 20px;
       }
       
@@ -113,7 +120,7 @@
       </nav>
     </header>
     <div class="content">
-      <h1>Performance Unleashed Stress Free</h1>
+      <h1>Performance Unleashed<br>Stress Free</h1>
       <p>We provide high-quality game server hosting for Pavlov VR players. Our servers are optimized for performance and reliability, and our customer support team is available 24/7 to assist you.</p>
       <p class="guarantee">Guaranteed, or your money back.</p>
     </div>
